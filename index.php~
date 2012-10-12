@@ -41,8 +41,8 @@
             $title   = sprintf(__('Mantenimiento &raquo; %s'), osc_page_title());
             $message = sprintf(__('Pedimos disculpas por cualquier inconveniente. %s está en mantenimiento.') . '.', osc_page_title() );
 
-            header('HTTP/1.1 503 Servicio no disponible temporalmente');
-            header('Status: 503 Servicio no disponible temporalmente');
+            header('HTTP/1.1 503 Service Temporarily Unavailable');
+            header('Status: 503 Service Temporarily Unavailable');
             header('Retry-After: 900');
             osc_die($title, $message);
         } else {

@@ -76,7 +76,7 @@
                     <?php } ?>
                </div>
                <div class="latest_ads">
-                    <h1><strong><?php _e('Últimas Publicaciones', 'modern') ; ?></strong></h1>
+                    <h1><strong><?php _e('Ultimas Publicaciones', 'modern') ; ?></strong></h1>
                     <?php if( osc_count_latest_items() == 0) { ?>
                         <p class="empty"><?php _e('No hay publicaciones recientes que mostrar', 'modern') ; ?></p>
                     <?php } else { ?>

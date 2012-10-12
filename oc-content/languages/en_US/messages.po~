@@ -1221,7 +1221,7 @@ msgid "Number of listings in the RSS has to be a numeric value"
 msgstr ""
 
 #: /var/www/osclass-git/oc-admin/settings.php:1370
-msgid "Max Ultimos anuncios latest listings has to be a numeric value"
+msgid "Max latest listings has to be a numeric value"
 msgstr ""
 
 #: /var/www/osclass-git/oc-admin/settings.php:1373

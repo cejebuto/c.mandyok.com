@@ -93,7 +93,7 @@
                     // Check if the item exists
                     if(count($aItem) == 0) {
                         $json['success'] = false;
-                        $json['msg'] = _m("La publicacion no existe");
+                        $json['msg'] = _m("The listing doesn't exist");
                         echo json_encode($json);
                         return false;
                     }

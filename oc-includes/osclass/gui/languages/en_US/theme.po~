@@ -462,7 +462,7 @@ msgid "Últimas Publicaciones"
 msgstr ""
 
 #: /var/www/osclass-git/oc-content/themes/modern/main.php:81
-msgid "No hay publicaciones recientes que mostrar"
+msgid "No Latest Listings"
 msgstr ""
 
 #: /var/www/osclass-git/oc-content/themes/modern/main.php:111
