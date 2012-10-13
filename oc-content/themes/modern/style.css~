@@ -561,7 +561,7 @@ div.uploader input { opacity: 0; filter: alpha(opacity:0); position: absolute; t
 }
 
 .premium_even {
-    background-color: #d7eaf0;
+    background-color: #A52C2C;
 }
 
 .ui-menu {

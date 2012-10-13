@@ -29,7 +29,8 @@
     <body>
         <?php osc_current_web_theme_path('header.php') ; ?>
         <div class="form_publish">
-            <?php osc_current_web_theme_path('inc.search.php') ; ?>
+            <?php osc_current_web_theme_path('inc.search.php') ;  echo 'Tambien puedes seleccionar una categoria'; ?>
+
         </div>
         <div class="content home">
             <div id="main">
@@ -38,6 +39,7 @@
                     $col1_max_cat       = ceil($total_categories/3);
                     $col2_max_cat       = ceil(($total_categories-$col1_max_cat)/2);
                     $col3_max_cat       = $total_categories-($col1_max_cat+$col2_max_cat);
+ 
                 ?>
                 <div class="categories <?php echo 'c' . $total_categories ; ?>">
                     <?php osc_goto_first_category() ; ?>
@@ -49,21 +51,29 @@
                             echo '<div class="col c1">';
                         }
                     ?>
-                    <?php while ( osc_has_categories() ) { ?>
+                    <?php while ( osc_has_categories() )echo 'SOY UN PUTO TEXTO'; { ?> 
                         <div class="category">
                             <h1><strong><a class="category cat_<?php echo osc_category_id() ; ?>" href="<?php echo osc_search_category_url() ; ?>"><?php echo osc_category_name() ; ?></a> <span>(<?php echo osc_category_total_items() ; ?>)</span></strong></h1>
                             <?php if ( osc_count_subcategories() > 0 ) { ?>
                                 <ul>
+
                                     <?php while ( osc_has_subcategories() ) { ?>
                                         <li><a class="category cat_<?php echo osc_category_id() ; ?>" href="<?php echo osc_search_category_url() ; ?>"><?php echo osc_category_name() ; ?></a> <span>(<?php echo osc_category_total_items() ; ?>)</span></li>
                                     <?php } ?>
                                 </ul>
+
                             <?php } ?>
                         </div>
-                        <?php
+                        <?php 
                             if (($col==1 && $i==$col1_max_cat) || ($col==2 && $i==$col2_max_cat) || ($col==3 && $i==$col3_max_cat)) {
                                 $i = 1;
                                 $col++;
+
+ echo '	<!--
+
+Este espacio esta Justo antes del Los Nuevos Anincios
+
+-->';
                                 echo '</div>';
                                 if($x < $total_categories) {
                                     echo '<div class="col c'.$col.'">';
@@ -76,7 +86,7 @@
                     <?php } ?>
                </div>
                <div class="latest_ads">
-                    <h1><strong><?php _e('Ultimas Publicaciones', 'modern') ; ?></strong></h1>
+                    <h1><strong><?php _e('Últimas Publicaciones', 'modern') ; ?></strong></h1>
                     <?php if( osc_count_latest_items() == 0) { ?>
                         <p class="empty"><?php _e('No hay publicaciones recientes que mostrar', 'modern') ; ?></p>
                     <?php } else { ?>

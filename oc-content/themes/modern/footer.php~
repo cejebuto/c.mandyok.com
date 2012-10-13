@@ -32,7 +32,7 @@
         <?php } ?>
         <?php
             if( osc_get_preference('footer_link', 'modern_theme') ) {
-                echo ' | ' . __('Todos los derechos reservados, si quieres saber mas visitanos en  <a title="Mandyok" href="http://mandyok.com/" target="_blank"> Mandyok.com</a>  <strong></strong>', 'modern');
+                echo ' | ' . __('Todos los derechos reservados, si quieres saber mas visitanos en  <a title="Mandyok" href="http://mandyok.com/" target="_blank">Mandyok.com</a>  <strong></strong>', 'modern');
             }
         ?>
     </div>
