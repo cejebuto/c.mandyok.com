@@ -20,8 +20,8 @@ define('DB_HOST', 'localhost');
 /** Database Table prefix */
 define('DB_TABLE_PREFIX', 'tbl_');
 
-define('REL_WEB_URL', '/t.mandyok.com/');
+define('REL_WEB_URL', '/c.mandyok.com/');
 
-define('WEB_PATH', 'http://localhost/t.mandyok.com/');
+define('WEB_PATH', 'http://localhost/c.mandyok.com/');
 
 ?>
